@@ -1,6 +1,8 @@
 const http = require(`http`)
+const express = require(`express`)
 const hostname = 'localhost';
 const port = `3000`
+var app = express();
 
 const server = http.createServer((req,res) => {
     res.statusCode = 200
@@ -8,6 +10,11 @@ const server = http.createServer((req,res) => {
     res.end(`This is a simple nodejs application running on the port:${port}`)
 })
 
-server.listen(port, hostname, () => {
+app.get(`/first`, function(req, res) {
+    var result = JSON.stringify({status:200, message:"First Node JS Application"})
+    res.send(result)
+})
+
+app.listen(port, function(){
     console.log(`Server is now running in the port:${port}`)
 })
