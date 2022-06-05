@@ -1,0 +1,25 @@
+{
+  "name": "simple-nodejs-app",
+  "version": "1.0.0",
+  "description": "A Simple NodeJS Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeyabal-B/simple-nodejs-app.git"
+  },
+  "keywords": [
+    "nodejs",
+    "sample",
+    "app"
+  ],
+  "author": "Jeyabal B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeyabal-B/simple-nodejs-app/issues"
+  },
+  "homepage": "https://github.com/Jeyabal-B/simple-nodejs-app#readme"
+}
